@@ -9,30 +9,41 @@ can query data stored in a SpaceCurve System cluster.
 
 This Adapter provides these ArcGIS Map Service interface features:
 
--   **All Layers and Tables**. This Adapter can retrieve metadata about tables
-    from the SpaceCurve System.
-
 -   **Layer / Table** resources. This Adapter can retrieve a table from the
-    SpaceCurve System and present it as a Feature Layer.
+    SpaceCurve System and present it as a Feature Layer. For details, see [Layer
+    / Table][1] in the ArcGIS REST reference.
+
+    [1]: <http://resources.arcgis.com/en/help/rest/apiref/layer.html>
+
+-   **All Layers and Tables**. This Adapter can retrieve metadata about tables
+    from the SpaceCurve System. For details, see [All Layers / Tables][2] in the
+    ArcGIS REST reference.
+
+    [2]: <http://resources.arcgis.com/en/help/rest/apiref/layers.html>
 
 -   **Query** operations. This Adapter allows both spatial and generic queries
     for Features from a Feature Layer, which the Adapter gathers from tables
-    within an instance in the SpaceCurve System.
+    within an instance in the SpaceCurve System. For details, see [Query][3] in
+    the ArcGIS REST reference.
 
-These instructions describe the steps you will take to use this
-Adapter and two examples on the SpaceCurve QuickStart Virtual Machine.
+    [3]: <http://resources.arcgis.com/en/help/rest/apiref/ms_dyn_query.html>
 
+These instructions describe the steps you will take to use this Adapter and two
+examples on the SpaceCurve QuickStart Virtual Machine.
 
-Dependencies
---------------------
+ Dependencies
+-------------
 
-Before following these instructions, be sure you installed sample data
-by following the instructions in the **Add Sample Data** section of *QuickStart for SpaceCurve Virtual Machine*.
+Before following these instructions, be sure you installed sample data by
+following the instructions in the **Add Sample Data** section of *QuickStart for
+SpaceCurve Virtual Machine*.
 
 Run Examples
 ------------
 
-You can use two browser-based examples to show data stored in the SpaceCurve System. These examples use the ArcGIS REST API, which the ArcGIS Server Adapter translates into native SpaceCurve REST API calls.
+You can use two browser-based examples to show data stored in the SpaceCurve
+System. These examples use the ArcGIS REST API, which the ArcGIS Server Adapter
+translates into native SpaceCurve REST API calls.
 
 ### The hexbin Example
 
@@ -46,9 +57,9 @@ To run the webmap example, enter this URL into the FireFox browser:
 
 `http://localhost/examples/webmap`
 
-The `webmap` example shows geographic points in a dataset. You can choose a
-table, a field in the table, an operator and a value. Matches on the field will
-appear as squares on the map.
+The webmap example shows geographic points in a dataset. You can choose a table,
+a field in the table, an operator and a value. Matches on the field will appear
+as squares on the map.
 
 **Bounding Box**
 
@@ -90,18 +101,14 @@ This adapter has these limitations:
     }
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
--   The adapter only implements a subset of the ArcGIS Server REST API. See the
-    API reference in the `doc/` tree of this repository.
-
 -   The adapter only transfers JSON and does not support tile exports.
 
+ License
+--------
 
-License
----------------------
-
-The ArcGIS Server Adapter for the SpaceCurve System is licensed under the Apache License, Version 2.0 (the "License"); you may not use
-this file except in compliance with the License. You may obtain a copy of the
-License at
+The ArcGIS Server Adapter for the SpaceCurve System is licensed under the Apache
+License, Version 2.0 (the "License"); you may not use this file except in
+compliance with the License. You may obtain a copy of the License at
 
 <http://www.apache.org/licenses/LICENSE-2.0>
 
