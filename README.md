@@ -101,7 +101,7 @@ This adapter has these limitations:
 
 -   The adapter only transfers JSON and does not support tile exports.
 
- License
+License
 --------
 
 The ArcGIS Server Adapter for the SpaceCurve System is licensed under the Apache
