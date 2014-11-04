@@ -10,10 +10,8 @@ can query data stored in a SpaceCurve System cluster.
 This Adapter provides these ArcGIS Map Service interface features:
 
 -   **Layer / Table** resources. This Adapter can retrieve a table from the
-    SpaceCurve System and present it as a Feature Layer. For details, see [Layer
-    / Table][1] in the ArcGIS REST reference.
-
-    [1]: <http://resources.arcgis.com/en/help/rest/apiref/layer.html>
+    SpaceCurve System and present it as a Feature Layer. For details, see (Layer
+    / Table)[http://resources.arcgis.com/en/help/rest/apiref/layer.html] in the ArcGIS REST reference.
 
 -   **All Layers and Tables**. This Adapter can retrieve metadata about tables
     from the SpaceCurve System. For details, see [All Layers / Tables][2] in the
