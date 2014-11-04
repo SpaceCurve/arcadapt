@@ -14,17 +14,17 @@ This Adapter provides these ArcGIS Map Service interface features:
     / Table](http://resources.arcgis.com/en/help/rest/apiref/layer.html) in the ArcGIS REST reference.
 
 -   **All Layers and Tables**. This Adapter can retrieve metadata about tables
-    from the SpaceCurve System. For details, see [All Layers / Tables][2] in the
+    from the SpaceCurve System. For details, see [All Layers / Tables](http://resources.arcgis.com/en/help/rest/apiref/layers.html) in the
     ArcGIS REST reference.
 
-    [2]: <http://resources.arcgis.com/en/help/rest/apiref/layers.html>
+    
 
 -   **Query** operations. This Adapter allows both spatial and generic queries
     for Features from a Feature Layer, which the Adapter gathers from tables
-    within an instance in the SpaceCurve System. For details, see [Query][3] in
+    within an instance in the SpaceCurve System. For details, see [Query](http://resources.arcgis.com/en/help/rest/apiref/ms_dyn_query.html) in
     the ArcGIS REST reference.
 
-    [3]: <http://resources.arcgis.com/en/help/rest/apiref/ms_dyn_query.html>
+   
 
 These instructions describe the steps you will take to use this Adapter and two
 examples on the SpaceCurve QuickStart Virtual Machine.
