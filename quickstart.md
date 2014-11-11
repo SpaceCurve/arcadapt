@@ -204,4 +204,4 @@ SpaceCurve System on github.com][1] to install and use example applications.
 Note that the QuickStart VM comes pre-installed with the ArcGIS Adapter and its
 examples.
 
-[1]: <arcadapt/README.md>
+[1]: <README.md>
