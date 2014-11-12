@@ -29,8 +29,8 @@ This Adapter provides these ArcGIS Map Service interface features:
 These instructions describe the steps you will take to use this Adapter and two
 examples on the SpaceCurve QuickStart Virtual Machine.
 
- Dependencies
--------------
+Dependencies
+------------
 
 Before following these instructions, be sure you installed sample data by
 following the instructions in the **Add Sample Data** section of *QuickStart for
@@ -39,15 +39,15 @@ SpaceCurve Virtual Machine*.
 Run Examples
 ------------
 
-You can use two browser-based examples to show data stored in the SpaceCurve
-System. These examples use the ArcGIS REST API, which the ArcGIS Server Adapter
-translates into native SpaceCurve REST API calls.
+You can use two browser-based examples in the SpaceCurve VM to show data stored in the SpaceCurve System. These examples use the ArcGIS REST API, which the ArcGIS Server Adapter translates into native SpaceCurve REST API calls. In these examples, you can zoom into and out of the map using the scroll wheel on the mouse.
 
 ### The hexbin Example
 
 To run the hexbin example, enter this URL into the FireFox browser:
 
 `http://localhost/examples/hexbin`
+
+The hexbin example shows areas where earthquakes have occurred. Areas with more earthquakes appear in a redder color. 
 
 ### The webmap Example
 
@@ -57,7 +57,11 @@ To run the webmap example, enter this URL into the FireFox browser:
 
 The webmap example shows geographic points in a dataset. You can choose a table,
 a field in the table, an operator and a value. Matches on the field will appear
-as squares on the map.
+as squares on the map. 
+
+**Data Types**
+
+When you choose a Field to query, notice the data type name that appears in gray text when the **Value** field is empty. For example, many fields have a data type of *esriFieldTypeString*. You can match all strings of a field of this type by choosing **Operator** *LIKE* and **Value** *'%'*.
 
 **Bounding Box**
 
@@ -73,15 +77,12 @@ latitude-longtitude coordinates.
 Enter these settings to query for cities near Seattle that start with the letter
 S.
 
-**Table:** schema.us\_cities
+* **Table:** schema.us\_cities
+* **Field:** NAME
+* **Operator:** LIKE
+* **Value:** 'S%'
 
-**Field:** NAME
-
-**Operator:** LIKE
-
-**Value:** 'S%'
-
-Hit **Query** to view the results.
+Hit **Query** to view the results. You can hover over map points to see city details.
 
 Limitations
 -----------
