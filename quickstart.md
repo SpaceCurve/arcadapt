@@ -70,7 +70,7 @@ into the SpaceCurve System.
 
 ### Open a Terminal Window
 
-Click the Terminal icon at the top-center of the desktop, next to the Firefox
+Double-click the Terminal icon at the top-center of the desktop, next to the Firefox
 icon. You will use this terminal window to load sample data into the SpaceCurve
 System, and to use the SpaceCurve SQL shell.
 
