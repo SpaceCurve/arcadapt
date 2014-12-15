@@ -25,7 +25,7 @@ agreement you agreed to before downloading this software.
 Other Resources
 ---------------
 
-In addition to this document, the QuickStart download includes full software
+The QuickStart download includes full software
 documentation and release notes. The software documentation includes detailed
 information about the SpaceCurve System, including its query language.
 
