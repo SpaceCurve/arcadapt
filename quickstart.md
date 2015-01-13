@@ -199,9 +199,12 @@ Next Steps
 ----------
 
 Now that you have a running installation of the SpaceCurve System that includes
-sample data, follow the instructions for the [ArcGIS Server Adapter for the
-SpaceCurve System on github.com][1] to install and use example applications.
-Note that the QuickStart VM comes pre-installed with the ArcGIS Adapter and its
-examples.
+sample data, follow the instructions in these two pages:
+    * [ArcGIS Server Adapter for the
+SpaceCurve System][1] to install and use example applications that call the ArcGIS API.
+    * [Cesium with Data Streaming][2] to install and use an example application with Cesium.
+
+
+https://github.com/SpaceCurve/cesium/blob/master/README.md
 
 [1]: <README.md>
