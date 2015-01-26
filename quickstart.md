@@ -39,6 +39,11 @@ machine:
 1.  Open this file in a compatible VMware player using the **File \> Open**
     menu.
 
+    **Note:** The SpaceCurve Quickstart VM is a 64-bit operating system.
+    VMware software might require changes to the BIOS/firmware settings
+    of your computer to support this VM. If changes are necessary, VMware
+    software will present steps you can follow to change the BIOS/firmware settings.
+
 2.  Before starting the VM, restore the **Initial State** snapshot.
 
 3.  Open **Settings** and ensure that Network Adapter is configured to
