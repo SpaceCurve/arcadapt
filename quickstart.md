@@ -56,7 +56,7 @@ Log In
 ------
 
 The VM will boot and arrive at the login screen of this CentOS 6 installation.
-Log in using the username and password *spacecurve*.
+Log in to the **spacecurve** account using the password *spacecurve*.
 
 Add Sample Data
 ---------------
