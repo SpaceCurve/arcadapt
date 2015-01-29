@@ -15,6 +15,9 @@ increasing throughput demands.
 Follow the instructions in this document to set up the QuickStart VM and sample
 data.
 
+**Note:** The SpaceCurve QuickStart Virtaul Machine requires Internet access for
+full functionality of the browser-based graphical interface examples.
+
 Copyright
 ---------
 
@@ -44,13 +47,7 @@ machine:
     of your computer to support this VM. If changes are necessary, VMware
     software will present steps you can follow to change the BIOS/firmware settings.
 
-2.  Before starting the VM, restore the **Initial State** snapshot.
-
-3.  Open **Settings** and ensure that Network Adapter is configured to
-    **Bridged/Autodetect**. This VM requires Internet access for full
-    functionality of the browser-based graphical interface.
-
-4.  Press the **Play** button to boot the VM.
+2.  Press the **Play** button to boot the VM.
 
 Log In
 ------
