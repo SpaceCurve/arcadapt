@@ -296,7 +296,7 @@ function getLayers(instanceName) {
     var sql = 'SELECT table_id, schema_name, table_name FROM scdb.scdb_tables WHERE table_id > 64;'
     var result = queryInstance(instanceName, sql);
     return result.map(function(record) {
-        var user_data = record[1];
+        var user_data = record;
         var layerName = user_data.schema_name + '.' + user_data.table_name;
         var layerId = tableIdToLayerId(user_data.table_id);
         return {
@@ -340,31 +340,31 @@ function getFields(instanceName, layerId) {
     sql = 'SELECT table_id, "type" FROM scdb.scdb_tables WHERE table_id = ' + tableId + ';';
     result = queryInstance(instanceName, sql);
 
-    var typeName = result[0][1].type;
+    var typeName = result[0].type;
     //console.log('typeName', typeName);
 
     sql = 'SELECT type_id FROM scdb.scdb_types WHERE type_name = \'' + typeName + '\';';
     result = queryInstance(instanceName, sql);
 
-    var typeId = result[0][1].type_id;
+    var typeId = result[0].type_id;
     //console.log('typeId', typeId);
 
     sql = 'SELECT * FROM scdb.scdb_type_elements WHERE label = \'properties\' AND type_id = ' + typeId + ';'
     result = queryInstance(instanceName, sql);
 
-    var typeElementRef = result[0][1].type_element_def.value;
+    var typeElementRef = result[0].type_element_def.value;
     //console.log('typeElementRef', typeElementRef);
 
     sql = 'SELECT * FROM scdb.scdb_type_elements WHERE type_id = ' + typeElementRef + ';'
     result = queryInstance(instanceName, sql);
 
     fields = result.filter(function(record) {
-        return !record[1].nullable;
+        return !record.nullable;
     }).map(function(record) {
         return {
-            'name' : record[1].label,
-            'type' : getType(record[1].type_element_def.value),
-            'alias' : record[1].label
+            'name' : record.label,
+            'type' : getType(record.type_element_def.value),
+            'alias' : record.label
         };
     });
     fields.push({
@@ -404,7 +404,7 @@ function getLayerName(instanceName, layerId) {
     var tableId = layerIdToTableId(layerId);
     var sql = 'SELECT schema_name, table_name FROM scdb.scdb_tables WHERE table_id = '+ tableId + ';'
     var result = queryInstance(instanceName, sql);
-    return result[0][1].schema_name + '.' + result[0][1].table_name;
+    return result[0].schema_name + '.' + result[0].table_name;
 };
 
 function esriToWkt(geometryType, geometry) {
@@ -521,8 +521,8 @@ function parseGeometry(geometry) {
 };
 
 function jsonToEsri(record) {
-    var object = { 'geometry': parseGeometry(record[1].geometry), 'attributes': record[1].properties };
-    object.attributes['OBJECTID'] = requestIdToObjectId(record[0].request_id);
+    var object = { 'geometry': parseGeometry(record.geometry), 'attributes': record.properties };
+    object.attributes['OBJECTID'] = requestIdToObjectId(parseInt(record.request_id));
     return object;
 };
 
