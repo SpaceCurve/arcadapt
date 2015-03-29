@@ -30,23 +30,6 @@ The QuickStart download includes full software
 documentation and release notes. The software documentation includes detailed
 information about the SpaceCurve System, including its query language.
 
-Boot the Virtual Machine
-------------------------
-
-Within the downloaded archive you will find a VMware Virtual Machine Disk Image
-File (file extension `.vmwarevm`). Follow these steps to start the virtual
-machine:
-
-1.  Open this file in a compatible VMware player using the **File \> Open**
-    menu.
-
-    **Note:** The SpaceCurve Quickstart VM is a 64-bit operating system.
-    VMware software might require changes to the BIOS/firmware settings
-    of your computer to support this VM. If changes are necessary, VMware
-    software will present steps you can follow to change the BIOS/firmware settings.
-
-2.  Press the **Play** button to boot the VM.
-
 Log In
 ------
 
