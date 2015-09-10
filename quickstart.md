@@ -187,7 +187,7 @@ way to start over form scratch is to shutdown SpaceCurve, erase its resources
 these tasks.
 
 **Note:** If you follow these steps to reset the installation, **you will need
-to re-install sample data** by following the steps shown above.
+to reload sample data** by re-running the `3_load.sh` script for each dataset.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 $ cd ~/VM
