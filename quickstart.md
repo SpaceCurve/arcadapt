@@ -196,18 +196,3 @@ $ sh scripts/cleanup.sh
 $ scctl start
 $ sh scripts/init.sh 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Next Steps
-----------
-
-Now that you have a running installation of the SpaceCurve System that includes
-sample data, follow the instructions in these two pages:
- -  [ArcGIS Server Adapter for the
-SpaceCurve System][1] to install and use example applications that call the ArcGIS API.
- - [Cesium with Data Streaming][2] to install and use an example application with Cesium.
-
-
-
-
-[1]: <README.md>
-[2]: <https://github.com/SpaceCurve/cesium/blob/master/README.md>
