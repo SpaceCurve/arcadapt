@@ -191,8 +191,6 @@ to re-install sample data** by following the steps shown above.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 $ cd ~/VM
-$ scctl stop
 $ sh scripts/cleanup.sh 
-$ scctl start
 $ sh scripts/init.sh 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
