@@ -194,3 +194,12 @@ $ cd ~/VM
 $ sh scripts/cleanup.sh 
 $ sh scripts/init.sh 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Next Steps
+----------
+
+Now that you have a running installation of the SpaceCurve System that includes
+sample data, visit the [ArcGIS Server Adapter for the SpaceCurve System][1] to
+install and use example applications that call the ArcGIS API.
+
+[1]: <README.md>
