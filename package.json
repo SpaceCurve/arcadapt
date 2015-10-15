@@ -1,0 +1,30 @@
+{
+  "name": "arcadapt",
+  "version": "1.0.0",
+  "description": "SpaceCurve bridge to ArcGIS REST API",
+  "main": "routes/index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "start": "node arcadapt.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/SpaceCurve/arcadapt.git"
+  },
+  "author": "",
+  "license": "Apache",
+  "bugs": {
+    "url": "https://github.com/SpaceCurve/arcadapt/issues"
+  },
+  "homepage": "https://github.com/SpaceCurve/arcadapt",
+  "dependencies": {
+    "http": "0.0.0",
+    "morgan": "^1.6.1",
+    "express": "^4.13.3",
+    "httpsync": "0.0.8",
+    "bigint": "^0.4.2"
+  }
+}
